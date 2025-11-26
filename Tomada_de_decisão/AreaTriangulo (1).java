@@ -1,14 +1,21 @@
+package prjAula002;
+import java.util.Scanner;
 
 public class AreaTriangulo {
-
 	public static void main(String[] args) {
-		int base, altura, area;
-
-		base = 32;
-		altura = 49;
+		Scanner ler = new Scanner(System.in);
+		double base, altura, area;
 		
-		area = (base*altura)/2;
-		System.out.println("Área: "+ area);
+		System.out.println("Digite o valor da base:");
+		base = ler.nextDouble();
+		
+		System.out.println("Digite o valor da altura:");
+		altura = ler.nextDouble();
+		
+		area = base*altura/2;
+		
+		System.out.println("A área do triângulo é de "+area);
 	}
-
+	
+	
 }
